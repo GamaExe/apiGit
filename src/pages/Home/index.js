@@ -32,8 +32,10 @@ export default function Home(props) {
     <S.HomeContainer>
       <S.Content>
         <h1>{props.title} {usuario}</h1>
-        <S.Input className="usuarioInput" placeholder="Usuario" value={usuario} onChange={e => setUsuario(e.target.value)}/>
-        <S.Button type="button" onClick={handlePesquisa}>Pesquisar</S.Button>
+        <div>
+          <S.Input className="usuarioInput" placeholder="Usuario" value={usuario} onChange={e => setUsuario(e.target.value)}/>
+          <S.Button type="button" onClick={handlePesquisa}>Pesquisar</S.Button>
+        </div>
       </S.Content>
       {erro ? <S.ErrorMsg>Ocorreu um erro. Tente novamente.</S.ErrorMsg> : ''}
     </S.HomeContainer>

@@ -10,8 +10,10 @@ export const HomeContainer = styled.div`
 
 export const Content = styled.div`
     width: 100vw;
+    height: 50%;
     display: flex;
-    align-itens: center;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
 `;
 
@@ -28,7 +30,7 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-    height: 1.5rem;
+    height: 1.7rem;
     border: 1px solid #000;
     background: #000;
     color: #fff;

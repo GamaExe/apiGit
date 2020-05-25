@@ -26,6 +26,7 @@ export const ListItem = styled.li`
     background: #000;
     color: #fff;
     padding: .5rem;
+    border-radius: 10px;
 `;
 
 export const LinkHome = styled(Link)`
